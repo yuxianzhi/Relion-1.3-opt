@@ -23,7 +23,7 @@
 	
 5）relion-1.3-socket.rar文件
 
-  relion的socket实现版本，加上了epoll的IO多路复用技术。虽然没有调用MPI的函数，但是使用mpicc来编译的，真正调用的是socket实现的函数，使用MPI.c启动多进程
+  relion的socket实现版本，加上了epoll的IO多路复用技术。虽然没有调用MPI的函数，但是使用mpicc来编译的，真正调用的是socket实现的函数，使用MPI.c启动多进程，具体实现可以参考Socket-MPI项目，relion的socket实现版本是在Socket-MPI基础上通过宏定义转换过来的。
   
   MPI.c是类似于mpirun的启动程序，需要单独编译gcc -std=c99 -o main MPI.c。
   
