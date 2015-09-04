@@ -27,4 +27,4 @@
   
   MPI.c是类似于mpirun的启动程序，需要单独编译gcc -std=c99 -o main MPI.c。
   
-  其余的和relion一模一样，运行不是使用mpirun，而是MPI.c编译出的main可执行程序
+  其余的和relion一模一样，运行不是使用mpirun，而是MPI.c编译出的main可执行程序。例如：同一节点9个进程的运行命令./main 9 ./relion_refine_mpi 
